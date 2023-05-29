@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <script
+      src="https://kit.fontawesome.com/3587aca0ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ROCK - PAPER - SCISSORS</h1>
+      <section class="game-container">
+        <div class="display">
+          <div class="play-and-comp">
+            <p>Player: <span id="playerDisplay"></span></p>
+            <p>Opponent: <span id="computerDisplay"></span></p>
+          </div>
+          <div class="result">
+            <p>Result</p>
+            <span id="resultDisplay">Select</span>
+          </div>
+        </div>
+
+        <div class="btns-container">
+          <div>
+            <i class="fa-solid fa-hand-back-fist"></i>
+            <button class="btns">Rock</button>
+          </div>
+          <div>
+            <i class="fa-solid fa-scroll"></i>
+            <button class="btns">Paper</button>
+          </div>
+          <div>
+            <i class="fa-solid fa-scissors"></i>
+            <button class="btns">Scissors</button>
+          </div>
+          <div>
+            <i class="fa-solid fa-repeat"></i>
+            <button id="replayBtn">Play Again</button>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="how-to-play" id="accordion-panel">
+          <div class="accordion-heading">
+            <h2>How To Play</h2>
+            <i class="fa-solid fa-arrow-up" id="accordion-arrow"></i>
+          </div>
+          <div class="wrapper" id="accordion-content">
+            <div class="inner">
+              <p>
+                A classic two-person game. Player start each round by selecting
+                Rock, Paper or Scissors.
+              </p>
+              <ul>
+                <li>Rock crushes Scissors.</li>
+                <li>Scissors cut Paper.</li>
+                <li>Paper cover Rock.</li>
+              </ul>
+              <p>See who win each round, Click play again to restart.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
